@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 46px;
+}
+.naranja{
+    background-color: #ff9428;
+}
+.body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.body h1{
+    padding: 10px 0;
+    text-align: center;
+}
+.inline{
+    display: inline;
+}
+.all-right{
+    padding: 0 50px;
+}
+.all-left{
+    padding: 0 50px;
+} 
+.left{
+    padding: 0 60px;
+} 
+ul{
+    list-style-position: inside;
+}
+h5{
+    color: #999 ;
+}
+.escuela{
+    color: #323232;
+}
+img{
+    width: 300px;
+}
