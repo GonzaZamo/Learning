@@ -1,0 +1,163 @@
+#titulo{/*selector de elementos con id "titulo"*/
+    color: tomato;
+}
+p.especial{ /*Selector de parrafo con clase especial*/
+    color: mediumseagreen;
+}
+p.texto{/*Selector de parrafos con clase texto */
+    color: slateblue;
+}
+/*Si un p tiene dos clases tomará lo indicado por el último selector*/
+div p{ /*Selector de p que este dentro de div*/
+    color:aquamarine;
+}
+div h2, div h3{ /*Selector h2 y h3 que esten dentro de div*/
+    color: brown;
+}
+*{ /*Selector universal que asignan propiedad a todo, a menos que ya otro selector haya asignado*/
+    font-size: 24px;
+    /* color: black; */
+}
+/* Propiedad color con Hexadecimal
+.color{
+    color: #ff0000;
+}
+*/
+/*propiedad color con rgb
+.color{
+    color: rgb(0, 0, 0);
+}
+*/
+.color{/*asignar borde*/
+    /* border: 5px black solid; */
+    /*
+    ALTERNATIVAS ESTILOS PARA BORDES (grosor color estilo)
+        dotted
+        dashed
+        solid
+        double
+        groove (tridimencional)
+        ridge (tridimencional)
+        inset (tridimencional)
+        outset (tridimencional)
+        none
+        hidden
+    */
+    border-style: solid; /*Permite seleccionar el estilo del borde unicamente*/
+    border-color: blue; /*Permite seleccionar el color del borde unicamente*/
+    border-radius: 5px; /*Permite asignar borde redondeado a los bordes */
+    border-width: 2rem; /*Permite seleccionar el ancho del borde unicamente*/
+}
+#fondo{
+    background-color: rgba(255, 0, 0); /*Dar color de fondo --- EL rgba sirve para dar como ultimo valor la opacidad del color entre 0 y 1*/
+    /*opacity: 0.3; /* Le da trasnparencia a todo el elemento no solo el color en especifico */
+    height: 200px;
+   /* background-image: url('img/anonymous.jpg');/*Puede poner una imagen de fondo*/
+   /* background-repeat: repeat-y; /*No repetir imagen de background*/
+   /* background-position: center top; /*Left center right - top center bottom y también piceles, cm, pulgadas, etc*/
+    background: #f00 url('img/anonymous.jpg') repeat-y center bottom / 100px 100px;
+   /* background-size: 100px 100px;/*Dimensiones del background --- debe estar después del 'background'*/
+}
+.margen{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /*top right bottom left - Si hacemos solo 2 parametro el primero es vertical y el segundo es horizontal*/
+    padding: 30px 25px 20px 15px; /*Si solo pasamos una se asiga el mismo valor - Con 3 valores el 1 es top  el 2 ambos lados y 3 bottom*/
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll; /*visible, hidden, scroll*/
+    outline: 1px solid red; /*Misma propiedades de border*/
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;/*left right justify center*/
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: #f00;
+}/*tienen que ser en este orden*/
+
+ul{
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0px; */
+    /* list-style-position: inside; */
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: solid 1px #eee;
+    padding: 5px;
+}
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #eee;
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+span{
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: #f00;
+}
+.inline{
+    display: inline;
+}
+#position{
+    /* position: static; */
+    /* position: relative; */
+    /* position: fixed; */
+    /* position: absolute; */
+    position: sticky;
+    left: 20px; /*right top bottom*/
+    top: 25px;
+}
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.conteiner{
+    height: 200px;
+}
+.right{
+    float: right;
+}
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}

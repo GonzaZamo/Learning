@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first Web</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hola beats</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td>Chanchito feliz</td>
+                    <td>U$19.99</td>
+                </tr>
+                <tr>
+                    <td>Chanchito Feliz muy feliz</td>
+                    <td>U$29.90</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>TOTAL U$49.89</td>
+            </tfoot>
+        </table>
+        <!--ul es lista no ordenada-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <!--ol es lista ordenada-->
+        <ol>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                <ol>
+                    <li style="list-style-type: lower-roman;">Sub Elemento 1</li>
+                    <li style="list-style-type: lower-roman;">Sub Elemento 2</li>
+                    <li style="list-style-type: lower-roman;">Sub Elemento 3</li>
+                </ol>
+            </li>
+        </ol>
+
+        <form action="/formulario" method="post">
+            <label for="Nombre">Nombre</label>
+            <input value="Prueba" type="text" id="Nombre" placeholder="Nombre"/>
+            <br>
+            <label for="Apellido">Apellido</label>
+            <input value="Prueba" type="text" id="Apellido" placeholder="Apellido"/>
+            <br>
+            <label for="Comentario">Comentario</label>
+            <br>
+            <textarea rows="10" cols="50" id="Comentario" placeholder="Ingrese un comentario" name="Comentario">Este es un valor por defecto</textarea>
+            <br>
+            <button type="button">Tipo botón</button>
+            <button type="reset">Tipo reset</button>
+            <button type="submit">Tipo submit</button>
+        </form>
+        <h1>My first heading</h1>
+        <h2>My second heading</h2>
+        <h3>My third heading</h3>
+        <h4>My fourth heading</h4>
+        <h5>My fifth heading</h5>
+        <h6>CHANCHITO FELIZ XD</h6>
+        <p>El chanchito feliz está muy feliz.</p>
+        <p>El chanchito triste está muy triste</p>
+        <hr>
+        <h2>Chanchito Felipe</h2>
+        <p>Texto un <span style="color:blue">poco</span> más.<br><br>Probando la etiquita de salto de línea</p>
+        <!--Esto es un comentario y no aparece en el explorador-->
+        <a target="_blank" href="https://www.google.de">Ir a google</a>
+        <br><img src="img/anonymous.jpg" width="100"/>
+    </body>
+</html>
